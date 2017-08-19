@@ -46,7 +46,7 @@ const createCanvas = (id, style = {}) => {
 const createImage = async (source) => new Promise((resolve, reject) => {
   const image = new Image(0, 0);
   image.src = source;
-  image.onload = () =>  {
+  image.onload = () => {
     resolve(image);
   };
 });
@@ -58,7 +58,7 @@ const initDemo = async () => {
   });
   let gl = canvas.getContext('webgl');
   if (!gl) {
-    console.log('WebGL not supported. Falling back on experimental-webgl.');
+    console.info('WebGL not supported. Falling back on experimental-webgl.');
     gl = canvas.getContext('experimental-webgl');
   }
   // Detect unsupported browsers
