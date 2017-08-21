@@ -10,7 +10,7 @@ const defaultCanvasStyle: CanvasStyleType = {
   width: window.innerWidth
 };
 
-const createCanvas = (id: string = 'canvas-sandbox', style: CanvasStyleType = defaultCanvasStyle): ?HTMLElement => {
+const createCanvas = (id: string = 'canvas-sandbox', style: CanvasStyleType = defaultCanvasStyle): HTMLCanvasElement => {
   const canvas: HTMLCanvasElement & {
     [attribute: string]: string
   } = document.createElement('canvas');
@@ -18,11 +18,13 @@ const createCanvas = (id: string = 'canvas-sandbox', style: CanvasStyleType = de
   Object.keys(style).forEach((attribute: 'height' | 'width') => {
     canvas[attribute] = String(style[attribute]);
   });
-  if (document.body) {
-    document.body.appendChild(canvas);
-    return document.getElementById(id);
+
+  if (!document.body) {
+    throw new Error('Cannot attach canvas to DOM.');
   }
-  return null;
+
+  document.body.appendChild(canvas);
+  return canvas;
 };
 
 export default createCanvas;

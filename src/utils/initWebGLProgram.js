@@ -7,7 +7,10 @@ type ShaderConfigType = {
   fragmentShaderSrc: string
 };
 
-const createProgram = (gl: WebGLRenderingContext, { vertexShaderSrc, fragmentShaderSrc }: ShaderConfigType): WebGLRenderingContext => {
+const createProgram = (gl: WebGLRenderingContext, { vertexShaderSrc, fragmentShaderSrc }: ShaderConfigType): {
+  gl: WebGLRenderingContext,
+  program: WebGLProgram
+} => {
   const vertexShader = createAndCompileShader(gl, vertexShaderSrc, gl.VERTEX_SHADER);
   const fragmentShader = createAndCompileShader(gl, fragmentShaderSrc, gl.FRAGMENT_SHADER);
 
@@ -32,18 +35,17 @@ const createProgram = (gl: WebGLRenderingContext, { vertexShaderSrc, fragmentSha
 
   gl.useProgram(program);
 
-  return gl;
+  return {
+    gl,
+    program
+  };
 };
 
 const initWebGLProgram = (canvas: HTMLCanvasElement): any => {
   if (!canvas) {
     throw new Error('No canvas element passed to initWebGL');
   }
-  let gl = canvas.getContext('webgl');
-  if (!gl) {
-    console.info('WebGL not supported. Falling back on experimental-webgl.'); // eslint-disable-line no-console
-    gl = canvas.getContext('experimental-webgl');
-  }
+  let gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
   if (!gl) {
     alert('Your browser does not support WebGL.');
     throw new Error('WebGL is not supported in this browser.');

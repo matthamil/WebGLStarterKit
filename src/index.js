@@ -1,3 +1,5 @@
+// @flow
+
 import 'babel-polyfill';
 import createCanvas from './utils/createCanvas';
 import initWebGLProgram from './utils/initWebGLProgram';
