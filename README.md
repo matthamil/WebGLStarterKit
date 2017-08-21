@@ -1,8 +1,6 @@
-# WebGL Playground
+# WebGL Starter Kit
 
-[View the Playground](http://webglplayground.surge.sh/).
-
-Following along a WebGL tutorial by [Indigo Code](https://www.youtube.com/channel/UCufDmM2MGQlbfS3luzgVDxw). Adapted to use [Webpack](https://webpack.js.org) and [npm](https://www.npmjs.com/) modules.
+The easy starter kit to start playing with WebGL. Includes [Flow](https://flow.org/en/) for static type-checking and [Webpack](https://webpack.js.org/) to bundle modules.
 
 ## Installation
 
