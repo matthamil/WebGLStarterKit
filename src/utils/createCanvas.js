@@ -1,15 +1,16 @@
 // @flow
-type CanvasStyle = {
+
+type CanvasStyleType = {
   height: string,
   width: string
 };
 
-const defaultCanvasStyle: CanvasStyle= {
+const defaultCanvasStyle: CanvasStyleType = {
   height: window.innerHeight,
   width: window.innerWidth
 };
 
-const createCanvas = (id: string = 'canvas-sandbox', style: CanvasStyle = defaultCanvasStyle) => {
+const createCanvas = (id: string = 'canvas-sandbox', style: CanvasStyleType = defaultCanvasStyle): ?HTMLElement => {
   const canvas: HTMLCanvasElement & {
     [attribute: string]: string
   } = document.createElement('canvas');
