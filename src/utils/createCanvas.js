@@ -1,8 +1,8 @@
 // @flow
 
 type CanvasStyleType = {
-  height: string,
-  width: string
+  height: string | number,
+  width: string | number
 };
 
 const defaultCanvasStyle: CanvasStyleType = {
