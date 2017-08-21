@@ -1,7 +1,7 @@
 # WebGL Starter Kit
 
-[![Build status](https://img.shields.io/travis/matthamil/webglstarterkit.svg?style=flat-square)](https://travis-ci.org/matthamil/webglstarterkit)
-[![Dependency Status](https://david-dm.org/matthamil/webglstarterkit.svg?style=flat-square)](https://david-dm.org/matthamil/webglstarterkit)
+[![Build status](https://img.shields.io/travis/matthamil/webglstarterkit.svg?style=flat-square)](https://travis-ci.org/matthamil/WebGLStarterKit)
+[![Dependency Status](https://david-dm.org/matthamil/webglstarterkit.svg?style=flat-square)](https://david-dm.org/matthamil/WebGLStarterKit)
 
 The easy starter kit with a modern toolchain for WebGL projects.
 
