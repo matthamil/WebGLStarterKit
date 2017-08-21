@@ -1,9 +1,16 @@
 # WebGL Starter Kit
 
-The easy starter kit to start playing with WebGL. Includes [Flow](https://flow.org/en/) for static type-checking and [Webpack](https://webpack.js.org/) to bundle modules.
+The easy starter kit with a modern toolchain for WebGL projects.
 
-## Installation
+## Get Started
+1. **Clone the project**. `git clone https://github.com/matthamil/WebGLStarterKit`
+1. **Install dependencies**. `npm install` or `yarn`
 
-Download the repo locally to your machine. Run `yarn` to install dependencies.
+## Technologies
+WebGL Starter Kit uses the following technologies:
 
-Use `yarn start` to start the Webpack development server.
+| **Tech** | **Description**
+|----------|-------|
+| [Babel](http://babeljs.io) |  Compiles ES6+ to ES5. Enjoy the new version of JavaScript today.
+| [Webpack](http://webpack.github.io) | Bundles npm packages and our JS into a single file.
+| [ESLint](http://eslint.org/)| Lint JS. Reports syntax and style issues. Using [eslint-plugin-flowtype](https://github.com/gajus/eslint-plugin-flowtype) for additional Flow specific linting rules. |
