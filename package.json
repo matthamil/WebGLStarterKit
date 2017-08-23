@@ -9,6 +9,7 @@
     "flow": "flow",
     "lint": "eslint .",
     "precommit": "yarn flow && yarn lint",
+    "setup": "bash setup.sh",
     "start": "webpack-dev-server --open",
     "test": "echo \"No tests yet :(\"",
     "watch": "webpack --watch"

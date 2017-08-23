@@ -8,6 +8,7 @@ The easy starter kit with a modern toolchain for WebGL projects.
 ## Get Started
 1. **Clone the project**. `git clone https://github.com/matthamil/WebGLStarterKit`
 1. **Install dependencies**. `npm install` or `yarn`
+1. **Run setup command**. `yarn setup`
 
 ## Technologies
 WebGL Starter Kit uses the following technologies:
