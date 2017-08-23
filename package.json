@@ -1,5 +1,5 @@
 {
-  "name": "webglstarterkit",
+  "name": "webgl-starterkit",
   "version": "1.0.0",
   "description": "A modern boilerplate for WebGL projects",
   "main": "index.js",
@@ -22,7 +22,7 @@
     "webgl",
     "starter kit"
   ],
-  "author": "Matt Hamil <mhamildev@gmail.com>",
+  "author": "Matt Hamil <j.matthew.hamil@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/matthamil/WebGLStarterKit/issues"
